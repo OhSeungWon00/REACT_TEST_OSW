@@ -1,3 +1,3 @@
 # REACT_TEST_OSW
 
-create-vite toDoList --template react
+오승원 리액트 평가 입니다.
