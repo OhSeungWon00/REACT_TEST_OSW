@@ -28,7 +28,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 // 다른 서버에서 자원을 요청하는 허용범위를 지정하는 어노테이션
 // 여기서는 모든 도메인에 대하여 허용한다.
-@CrossOrigin("*")       
+@CrossOrigin("*")     
 @RestController
 @RequestMapping("/todos")
 public class TodoController {
@@ -43,6 +43,7 @@ public class TodoController {
         @RequestParam(value = "size", defaultValue = "10", required = false) int size
     ) {
         try {
+            log.info("아무거나1");
             PageInfo<Todos> pageInfo = todoService.list(page, size);
             Pagination pagination = new Pagination();
             pagination.setPage(page);

@@ -39,6 +39,8 @@ dependencies {
 	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
 	// pagehelper
 	implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:2.1.0'
+	// bean validation
+	  implementation 'org.hibernate.validator:hibernate-validator:6.2.0.Final'
 }
 
 tasks.named('test') {

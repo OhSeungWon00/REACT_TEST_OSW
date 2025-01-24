@@ -10,14 +10,19 @@ import com.aloha.todolist.mapper.TodoMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class TodoServiceImpl implements TodoService {
 
     @Autowired private TodoMapper todoMapper;
 
     @Override
     public List<Todos> list() {
+        log.info("캬캬캬캬");
         return todoMapper.list();
+        
     }
 
     @Override
